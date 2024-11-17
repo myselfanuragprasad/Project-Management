@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Har Din Job Mela</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            /* Full height for vertical centering */
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .support {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .go-back-btn {
+            margin-top: 20px;
+            padding: 10px 15px;
+            font-size: 1em;
+            color: white;
+            background-color: #007bff;
+            /* Primary color */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .go-back-btn:hover {
+            background-color: #0056b3;
+            /* Darker shade on hover */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="{{ asset('logo-hdjm.png') }}" alt="Logo" class="logo">
+        <h1>Welcome to Har Din Job Mela</h1>
+        <p class="support">Please contact admin for support</p>
+        <button type="button" class="go-back-btn">Logout</button>
+    </div>
+</body>
+
+</html>
