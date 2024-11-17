@@ -62,7 +62,10 @@ watchEffect(() => {
 const taskFileChange = (event) => {
   const fileInput = event.target;
   const fetchElement = document.getElementById("taskFileFetch");
-  fetchElement.style.display = "none";
+  if (fetchElement) {
+    fetchElement.style.display = "none";
+  }
+
   const formErrors = {};
   let fileExt;
   imageUrl.value = "";
@@ -188,6 +191,7 @@ const taskFileChange = (event) => {
               />
               <img
                 id="taskFileFetch"
+                v-if="imageUrl"
                 :src="imageUrl"
                 alt="Task File Preview"
                 class="mt-2 show-file"
